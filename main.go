@@ -9,7 +9,7 @@ import (
 	"time"
 )
 
-const URL = "https://api.open-meteo.com/v1/forecast?latitude=51.51&longitude=-0.13&current_weather=true"
+var URL = "https://api.open-meteo.com/v1/forecast?latitude=51.51&longitude=-0.13&current_weather=true"
 
 func main() {
 	http.HandleFunc("/", MyHandler)
